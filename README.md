@@ -1,6 +1,6 @@
 # Keys vs Clicks
 
-<img src="KeysVsClicks/Assets.xcassets/AppIcon.appiconset/mac512.png" width="128" height="128" alt="Keys vs Clicks Icon">
+<img src="KeysVsClicks/Assets.xcassets/AppIcon.appiconset/512.png" width="128" height="128" alt="Keys vs Clicks Icon">
 
 A macOS menu bar app that helps you track and improve your keyboard-to-mouse usage ratio.
 
