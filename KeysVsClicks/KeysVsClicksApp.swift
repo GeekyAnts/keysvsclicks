@@ -17,7 +17,7 @@ struct KeysVsClicksApp: App {
     }
     
     var body: some Scene {
-        MenuBarExtra("Keys vs Clicks", systemImage: "keyboard") {
+        MenuBarExtra(isInserted: .constant(true)) {
             Button("Open Keys vs Clicks") {
                 isWindowShown = true
                 windowController?.window?.makeKeyAndOrderFront(nil)
@@ -28,6 +28,15 @@ struct KeysVsClicksApp: App {
             
             Button("Quit") {
                 NSApplication.shared.terminate(nil)
+            }
+        } label: {
+            if let image = NSImage(named: "AppIcon") {
+                // Scale down the app icon to fit in menu bar
+                let scaledImage = NSImage(size: NSSize(width: 18, height: 18), flipped: false) { rect in
+                    image.draw(in: rect)
+                    return true
+                }
+                Image(nsImage: scaledImage)
             }
         }
     }
