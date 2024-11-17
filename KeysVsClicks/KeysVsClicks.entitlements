@@ -4,7 +4,9 @@
 <dict>
     <key>com.apple.security.app-sandbox</key>
     <true/>
-    <key>com.apple.security.files.user-selected.read-only</key>
+    <key>com.apple.security.temporary-exception.apple-events</key>
+    <true/>
+    <key>com.apple.security.temporary-exception.accessibility</key>
     <true/>
 </dict>
 </plist>

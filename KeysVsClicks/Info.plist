@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSSupportsAutomaticTermination</key>
+    <false/>
+    <key>NSSupportsSuddenTermination</key>
+    <false/>
+    <key>NSInputMonitoringUsageDescription</key>
+    <string>This app needs to monitor keyboard and mouse input to count your keystrokes and clicks.</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.geekyants.keysvsclicks</string>
+    <key>NSAppleEventsUsageDescription</key>
+    <string>KeysVsClicks needs to monitor input events to count keystrokes and clicks.</string>
+    <key>CFBundleDisplayName</key>
+    <string>Keys Vs Clicks</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>LSBackgroundOnly</key>
+    <false/>
+</dict>
+</plist> 

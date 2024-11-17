@@ -1,0 +1,14 @@
+{
+  "name": "keysvsclicks",
+  "version": "1.0.0",
+  "main": "generate-icons.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sanket Sahu",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}
