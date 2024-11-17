@@ -14,6 +14,8 @@ struct KeysVsClicksApp: App {
     
     init() {
         windowController = WindowController()
+        windowController?.window?.makeKeyAndOrderFront(nil)
+        NSApplication.shared.activate(ignoringOtherApps: true)
     }
     
     var body: some Scene {
@@ -21,6 +23,13 @@ struct KeysVsClicksApp: App {
             Button("Open Keys vs Clicks") {
                 isWindowShown = true
                 windowController?.window?.makeKeyAndOrderFront(nil)
+                NSApplication.shared.activate(ignoringOtherApps: true)
+            }
+            
+            Divider()
+            
+            Button("About Keys vs Clicks") {
+                NSApplication.shared.orderFrontStandardAboutPanel(nil)
                 NSApplication.shared.activate(ignoringOtherApps: true)
             }
             

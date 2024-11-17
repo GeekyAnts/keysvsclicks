@@ -71,7 +71,7 @@ struct ContentView: View {
                         .padding(.top, 32)
 
                     VStack(spacing: 8) {
-                        Text("KeyClickRatio")
+                        Text("Key/Click Ratio")
                             .font(.title2)
                             .foregroundColor(.secondary)
                         Text(keyClickRatio)
@@ -87,7 +87,7 @@ struct ContentView: View {
 
                     HStack(spacing: 40) {
                         VStack {
-                            Text("Keyboard")
+                            Text("Key strokes")
                                 .font(.title3)
                             Text("\(inputMonitor.keyCount)")
                                 .font(.system(size: 40, weight: .medium))
@@ -97,7 +97,7 @@ struct ContentView: View {
                         .cornerRadius(10)
                         
                         VStack {
-                            Text("Mouse")
+                            Text("Mouse clicks")
                                 .font(.title3)
                             Text("\(inputMonitor.clickCount)")
                                 .font(.system(size: 40, weight: .medium))
@@ -112,7 +112,13 @@ struct ContentView: View {
                     Text(isTracking ? "Currently tracking your input usage" : "Start tracking your input usage")
                         .font(.headline)
                         .foregroundColor(.secondary)
-                        .padding(.bottom, 32)
+                        .padding(.bottom, -12)
+                    
+                    // Add credits at the bottom
+                    Text("Built by Sanket Sahu, GeekyAnts")
+                        .font(.caption)
+                        .foregroundColor(.secondary.opacity(0.7))
+                        .padding(.bottom, 8)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal, 32)
