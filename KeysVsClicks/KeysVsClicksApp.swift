@@ -9,22 +9,26 @@ import SwiftUI
 
 @main
 struct KeysVsClicksApp: App {
+    @State private var isWindowShown = false
     var windowController: WindowController?
     
     init() {
         windowController = WindowController()
-        windowController?.window?.center()
-        windowController?.showWindow(nil)
     }
     
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .windowStyle(.hiddenTitleBar)
-        
         MenuBarExtra("Keys vs Clicks", systemImage: "keyboard") {
-            ContentView()
+            Button("Open Keys vs Clicks") {
+                isWindowShown = true
+                windowController?.window?.makeKeyAndOrderFront(nil)
+                NSApplication.shared.activate(ignoringOtherApps: true)
+            }
+            
+            Divider()
+            
+            Button("Quit") {
+                NSApplication.shared.terminate(nil)
+            }
         }
     }
 }
